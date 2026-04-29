@@ -1,0 +1,32 @@
+@use '../../../styles/variables.scss' as *;
+
+.button {
+  padding: 16px 49px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.primary {
+  background-color: $color-primary;
+  color: $color-accent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $white;
+  }
+}
+
+.secondary {
+  background-color: $color-secondary;
+  color: $white;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $color-accent;
+  }
+}

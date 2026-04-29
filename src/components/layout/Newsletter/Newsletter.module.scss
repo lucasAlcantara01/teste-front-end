@@ -1,0 +1,131 @@
+@use '../../../styles/variables' as *;
+
+.newsletter {
+  background-color: $color-accent;
+  padding: 40px 0;
+  width: 100%;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 24px;
+    }
+  }
+
+  &__text {
+    flex: 1;
+
+    h2 {
+      color: $white;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: $white;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+
+  &__formSection {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__inputs {
+    display: flex;
+    gap: 12px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-primary;
+    font-size: 14px;
+    color: $gray-800;
+
+    &::placeholder {
+      color: $gray-500;
+    }
+
+    &:focus {
+      outline: 2px solid $color-primary;
+    }
+  }
+
+  &__button {
+    background-color: $color-primary;
+    color: #161615;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s, transform 0.2s;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: #fff;
+    }
+  }
+
+  &__checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $white;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__checkbox {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    accent-color: $color-primary;
+  }
+}
