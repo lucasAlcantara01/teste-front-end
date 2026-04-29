@@ -20,7 +20,7 @@ Siga os passos abaixo:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/lucasAlcantara01/teste-front-end-econverse.git
+git clone https://github.com/lucasAlcantara01/teste-front-end.git
 ```
 
 2. Acesse a pasta do projeto:
